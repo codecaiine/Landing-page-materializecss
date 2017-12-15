@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<p>Text</p>
+
+<select id="numb1">
+            <option value="" disabled selected>Education Level</option>
+            <option value="1">Level 1</option>
+            <option value="2">Level 2</option>
+            <option value="3">Level 3</option>
+         </select>
+    
+<select id="numb2">
+            <option value="" disabled selected>Education Level</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+         </select>    
+
+<input id="numb3">
+
+<button type="button" onclick="myFunction()">Submit</button>
+
+<p id="demo"></p>
+    
+///////
+    
+<input id="search" type="text" autocomplete="off" />
+<div id="results"></div>
+
+<script>
+    
+function myFunction() {
+    var x, y, z, text;
+
+    // Get the value of the input field with 
+    x = document.getElementById("numb1").value;
+    y = document.getElementById("numb2").value;
+    z = document.getElementById("numb3").value;
+
+    // comparaison
+    if (x =='1' && y == 'male' && z == 'Accra' || x =='2' && y == 'female' && z == 'Accra' ) {
+        
+        text = "Yes yes";
+        
+    } else {
+        text = "zero";
+    }
+    
+    document.getElementById("demo").innerHTML = text + x;
+}
+    
+    
+(function() {
+var searchElement = document.getElementById('search'),
+results = document.getElementById('results'),
+selectedResult = -1, // Permet de savoir quel résultat est sélectionné : -1 signifie « aucune sélection »
+previousRequest, // On stocke notre précédente requête dans cette variable previousValue = searchElement.value; // On fait de même avec la précédente valeur
+})();    
+</script>
+
+</body>
+</html> 
